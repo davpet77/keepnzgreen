@@ -3,7 +3,7 @@ lock '3.4.0'
 
 set :application, 'keepnzgreen'
 set :scm, :git
-set :repo_url, 'git@github.com:/davpet77/keepnzgreen.git'
+set :repo_url, 'git@github.com:/davpet77/knzg1.git'
 set :branch, "master"
 set :pty, true
 set :format, :pretty
