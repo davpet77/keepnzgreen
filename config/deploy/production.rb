@@ -20,7 +20,7 @@
  role :app, %w{deploy@128.199.124.158}
  role :web, %w{deploy@128.199.124.158}
  role :db,  %w{deploy@128.199.124.158}
-role :all,  %w{deploy@128.199.124.158}
+
 
 
 # Configuration
