@@ -98,8 +98,4 @@ gem 'refinerycms-products', github: 'bisscomm/refinerycms-products', branch: 'ma
 
 #gem 'refinerycms-videojs', git: 'https://github.com/adexin-team/refinerycms-videojs', branch: 'master'
 
-gem 'refinerycms-page-images', git: 'https://github.com/refinery/refinerycms-page-images', branch: 'master'
-
-gem 'refinerycms-products', github: 'bisscomm/refinerycms-products', branch: 'master'
-
 #gem 'devise'
