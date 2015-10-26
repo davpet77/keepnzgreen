@@ -1,4 +1,17 @@
 GIT
+  remote: git://github.com/bisscomm/refinerycms-products.git
+  revision: cfbcc51e6a0ed32b54632c2164516d141c7c1735
+  branch: master
+  specs:
+    refinerycms-products (3.0.0)
+      awesome_nested_set (~> 3.0.0)
+      friendly_id (~> 5.1.0)
+      globalize (>= 4.0.0, < 5.2)
+      refinerycms-acts-as-indexed (~> 2.0.0)
+      refinerycms-core (~> 3.0.0)
+      refinerycms-page-images (~> 3.0.0)
+
+GIT
   remote: https://github.com/anitagraham/refinerycms-page-resources
   revision: 18450c6454cd0a3ff9335cb3ec9e496e30696d7a
   branch: master
@@ -95,6 +108,16 @@ GIT
       globalize (>= 4.0.0, < 5.2)
       refinerycms-core (~> 3.0.0)
       refinerycms-settings (~> 3.0.0)
+
+GIT
+  remote: https://github.com/refinery/refinerycms-page-images
+  revision: 9b5f16e8266cb3c823c4d310ec3e733245258dde
+  branch: master
+  specs:
+    refinerycms-page-images (3.0.0)
+      decorators (~> 2.0.0)
+      globalize (~> 5.0)
+      refinerycms-pages (~> 3.0.0)
 
 GIT
   remote: https://github.com/refinery/refinerycms-portfolio
@@ -346,8 +369,10 @@ DEPENDENCIES
   refinerycms-image_slideshows!
   refinerycms-inquiries!
   refinerycms-news!
+  refinerycms-page-images!
   refinerycms-page-resources!
   refinerycms-portfolio!
+  refinerycms-products!
   refinerycms-wymeditor (~> 1.0, >= 1.0.6)
   sass-rails (~> 5.0)
   sdoc (~> 0.4.0)
