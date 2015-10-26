@@ -4,9 +4,7 @@ ruby '2.1.6'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.1'
-# Use sqlite3 as the database for Active Record
 
-####gem 'msql3'
 
 group :development, :test do
   gem 'sqlite3'
@@ -19,11 +17,11 @@ group :development, :test do
   gem 'capistrano', '~> 3.4.0'
 end
 
-#group :production do
-#  gem 'mysql2'
+group :production do
+  gem 'mysql2'
 
 # Use Unicorn as the app server
- # gem 'unicorn'
+  gem 'unicorn'
 
 #end
 
@@ -92,10 +90,10 @@ gem 'refinerycms-page-resources', git: 'https://github.com/anitagraham/refineryc
 
 gem 'refinerycms-image_slideshows', git: 'https://github.com/bisscomm/refinerycms-image-slideshows', branch: 'master'
 
+#gem 'refinerycms-videojs', git: 'https://github.com/adexin-team/refinerycms-videojs', branch: 'master'
+
 gem 'refinerycms-page-images', git: 'https://github.com/refinery/refinerycms-page-images', branch: 'master'
 
 gem 'refinerycms-products', github: 'bisscomm/refinerycms-products', branch: 'master'
-
-#gem 'refinerycms-videojs', git: 'https://github.com/adexin-team/refinerycms-videojs', branch: 'master'
 
 #gem 'devise'
