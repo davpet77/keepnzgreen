@@ -23,6 +23,8 @@ group :production do
 # Use Unicorn as the app server
   gem 'unicorn'
 
+  gem 'nokogiri'
+
 end
 
 gem 'bootstrap-sass', '~> 3.3.4'
