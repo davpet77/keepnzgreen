@@ -3,7 +3,7 @@ lock '3.4.0'
 
 set :application, 'keepnzgreen'
 set :scm, :git
-set :repo_url, 'git@github.com:/davpet77/keepnzgreen.git'
+set :repo_url, 'git@github.com:/davpet77/knzg.git'
 set :branch, "master"
 set :pty, true
 set :format, :pretty
@@ -33,10 +33,10 @@ set :deploy_via, :copy
 # set :format, :pretty
 
 # Default value for :log_level is :debug
- set :log_level, :debug
+# set :log_level, :debug
 
 # Default value for :pty is false
- set :pty, true
+# set :pty, true
 
 # Default value for :linked_files is []
 # set :linked_files, fetch(:linked_files, []).push('config/database.yml', 'config/secrets.yml')
@@ -49,9 +49,6 @@ set :deploy_via, :copy
 
 # Default value for keep_releases is 5
 # set :keep_releases, 5
-
-#default_run_options[:pty] = true
-
 set :linked_files, %w(config/database.yml)
 
 set :rvm_type, :system

@@ -23,6 +23,3 @@ Refinery::News::Engine.load_seed
 
 # Added by Refinery CMS Image Slides extension
 Refinery::ImageSlideshows::Engine.load_seed
-
-# Added by Refinery CMS Products extension
-Refinery::Products::Engine.load_seed

@@ -7,11 +7,7 @@ Rails.application.config.assets.precompile += %w( refinery/blog/backend.css )
 
 Rails.application.config.assets.precompile += %w( refinery/page-resource-picker.css )
 
-Rails.application.config.assets.precompile += %w( refinery/portfolio/admin/galleries.css )
-
 Rails.application.config.assets.version = '1.0'
-
-Rails.application.config.assets.precompile += %w( refinery/products/backend.css )
 
 
 
