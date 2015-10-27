@@ -6,10 +6,10 @@ ruby '2.1.6'
 gem 'rails', '4.2.1'
 
 group :production do
-  #gem 'mysql2', '~> 0.3.18'
+  gem 'mysql2', '~> 0.3.18'
 
 # Use Unicorn as the app server
-  #gem 'unicorn'
+  gem 'unicorn'
 
 end
 
