@@ -369,6 +369,10 @@ DEPENDENCIES
   jbuilder (~> 2.0)
   jquery-rails
   mysql2 (~> 0.3.18)
+<<<<<<< HEAD
+  nokogiri
+=======
+>>>>>>> origin/master
   quiet_assets
   rails (= 4.2.1)
   refinerycms!
