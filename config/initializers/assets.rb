@@ -11,8 +11,6 @@ Rails.application.config.assets.precompile += %w( refinery/portfolio/admin/galle
 
 Rails.application.config.assets.version = '1.0'
 
-Rails.application.config.assets.precompile += %w( refinery/products/backend.css )
-
 
 
 # Add additional assets to the asset load path

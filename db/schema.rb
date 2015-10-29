@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20151023222123) do
+ActiveRecord::Schema.define(version: 20151028233832) do
 
   create_table "refinery_blog_categories", force: :cascade do |t|
     t.string   "title"

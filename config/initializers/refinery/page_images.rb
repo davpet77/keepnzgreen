@@ -8,5 +8,5 @@ config.enable_for = [
     {:model=>"Refinery::Blog::Post", :tab=>"Refinery::Blog::Tab"},
     {:model=>"Refinery::Products::Product", :tab=>"Refinery::Products::Tab"}
   ]
-
+  
 end
