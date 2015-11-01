@@ -1,0 +1,75 @@
+
+<% provide(:donate, "active") %>
+
+<% @title="Donate" %>
+
+
+<head>
+
+<link href="./favicon.ico" rel="icon" type="image/x-icon" />
+  <title><%= @title %></title>
+
+
+</head>
+
+<style>
+
+html, body {
+  background-color: #d0e5ce;
+    margin:0;
+    padding:0;
+}
+h1 {
+    margin:0;
+}
+
+
+#outPopUp{
+     position:absolute;
+     width:300px;
+     height:400px;
+     z-index:15;
+     top:25%;
+     left:50%;
+     margin:-100px 0 0 -150px;
+     background:green;
+     text-align: center;
+   }
+
+     </style>
+
+
+
+<div id="outPopUp">
+<br>
+  
+  <p class="<%= yield(:donate) %>"><a href="/home.html">Close this Box</a> </p>
+
+  <%= form_tag charges_path do %>
+  <br>
+  <article>
+  
+  <h1>DONATE</h1>
+
+  <br><br>
+
+  <h3 style="color:blue"><p>Donations are used to</p> 
+  <p>keep website operational.</p></h3>
+  
+  <br><br>
+    <label class="amount">
+    <br>
+      <span>Amount: $10.00</span>
+
+    </label>
+  </article>
+
+  <script src="https://checkout.stripe.com/checkout.js" class="stripe-button"
+          data-key="<%= Rails.configuration.stripe[:publishable_key] %>"
+          data-description="Donate"
+          data-amount="1000"
+          data-locale="auto"></script>
+<% end %>
+</div>
+
+

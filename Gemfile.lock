@@ -1,6 +1,6 @@
 GIT
   remote: git://github.com/bisscomm/refinerycms-products.git
-  revision: cfbcc51e6a0ed32b54632c2164516d141c7c1735
+  revision: f37b8a8910018b9d101978d8f6fcaf8c20235d57
   branch: master
   specs:
     refinerycms-products (3.0.0)
@@ -209,12 +209,15 @@ GEM
       responders
       thread_safe (~> 0.1)
       warden (~> 1.2.3)
+    domain_name (0.5.25)
+      unf (>= 0.0.5, < 1.0.0)
     dragonfly (1.0.10)
       addressable (~> 2.3)
       multi_json (~> 1.0)
       rack (>= 1.3.0)
     erubis (2.7.0)
     execjs (2.5.2)
+    ffi (1.9.10-x86-mingw32)
     filters_spam (0.5)
     font-awesome-sass (4.3.2.1)
       sass (~> 3.2)
@@ -225,6 +228,8 @@ GEM
     globalize (5.0.1)
       activemodel (>= 4.2.0, < 4.3)
       activerecord (>= 4.2.0, < 4.3)
+    http-cookie (1.0.2)
+      domain_name (~> 0.5)
     i18n (0.7.0)
     jbuilder (2.2.16)
       activesupport (>= 3.0.0, < 5)
@@ -249,6 +254,7 @@ GEM
     net-scp (1.2.1)
       net-ssh (>= 2.6.5)
     net-ssh (2.9.2)
+    netrc (0.11.0)
     nokogiri (1.6.6.2-x86-mingw32)
       mini_portile (~> 0.6.0)
     orm_adapter (0.5.0)
@@ -304,6 +310,11 @@ GEM
       refinerycms-core (~> 3.0, >= 3.0.0)
     responders (2.1.0)
       railties (>= 4.2.0, < 5)
+    rest-client (1.8.0-x86-mingw32)
+      ffi (~> 1.9)
+      http-cookie (>= 1.0.2, < 2.0)
+      mime-types (>= 1.16, < 3.0)
+      netrc (~> 0.7)
     routing-filter (0.5.0)
       actionpack (~> 4.2)
       activesupport (~> 4.2)
@@ -330,6 +341,9 @@ GEM
       colorize (>= 0.7.0)
       net-scp (>= 1.1.2)
       net-ssh (>= 2.8.0)
+    stripe (1.22.0)
+      json (~> 1.8.1)
+      rest-client (~> 1.4)
     thor (0.19.1)
     thread_safe (0.3.5)
     tilt (1.4.1)
@@ -343,6 +357,9 @@ GEM
     uglifier (2.7.1)
       execjs (>= 0.3.0)
       json (>= 1.8.0)
+    unf (0.1.4)
+      unf_ext
+    unf_ext (0.0.7.1-x86-mingw32)
     unicorn (4.9.0)
       kgio (~> 2.6)
       rack
@@ -385,6 +402,7 @@ DEPENDENCIES
   sass-rails (~> 5.0)
   sdoc (~> 0.4.0)
   sqlite3
+  stripe
   turbolinks
   tzinfo-data
   uglifier (>= 1.3.0)
