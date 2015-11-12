@@ -11,6 +11,17 @@ Rails.application.config.assets.precompile += %w( refinery/portfolio/admin/galle
 
 Rails.application.config.assets.version = '1.0'
 
+Rails.application.config.assets.precompile += %w( swift-box.min.js )
+
+Rails.application.config.assets.precompile += %w( swift-box-layout.min.css )
+
+
+Rails.application.config.assets.precompile += %w( blog2.css )
+
+Rails.application.config.assets.precompile += %w( bootstrap2.css )
+
+Rails.application.config.assets.precompile += %w( jquery.min.js )
+
 
 
 # Add additional assets to the asset load path

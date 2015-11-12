@@ -1,0 +1,58 @@
+
+
+<%= javascript_include_tag 'jquery.min.js' %>
+
+ <%= javascript_include_tag 'swift-box.min' %>
+ <%= stylesheet_link_tag "swift-box-layout.min" %>
+
+  <script type="text/javascript">
+        $(document).ready(function(e) {
+              $('#swift_box').lc_swift_box({
+       theme: 'light',
+        height: 430,
+        max_news: 50,
+        news_per_time: 4,
+        date_format: 'dd mmmm yyyy - HH:MM',
+        layout: 'vertical',
+        min_news_h: 130,
+        vert_img_w: 200,
+        boxed_news: false,
+        img_behavior: 'link',
+        buttons_position: 'top',
+        read_more_txt: '[...]',
+        exp_main_img_pos: 'side',
+        
+        autoplay: true,
+        carousel: true,
+
+        social_share: false,
+        touchswipe: false,
+        
+        
+src : [
+            
+      {
+        type: 'rss',
+             url: 'http://feeds.feedburner.com/HIGHTIMESMagazine?format=xml',
+             remove_tags: 'em',
+          strip_tags: 'br',
+          link_target: '_blank'
+    
+      },
+      
+      {
+      type: 'rss',
+             url: 'http://www.vimm.ca/feed/'
+             
+      },
+      {
+      type: 'rss',
+             url: 'http://www.huffingtonpost.com/news/marijuana/feed//'
+             
+      }
+        ]
+   });
+        });
+        </script>
+
+        <div id="swift_box" ></div>

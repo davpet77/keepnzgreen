@@ -1,12 +1,58 @@
+    <!-- <%= javascript_include_tag 'swift-box.min' %>
+        <%= stylesheet_link_tag "swift-box-layout.min" %> <%= javascript_include_tag 'jquery.min.js' %>
+
+<script type="text/javascript">
+$(document).ready(function(e) { 
+       $('#swift_box2').lc_swift_box({
+      theme: 'light',
+    height: 90,
+    news_per_time: 1,
+    max_news: 50,
+    social_share: true,
+    expandable_news: true,
+    elapsed_time: false,
+    
+    pause_on_hover: true,
+    autop_after_exp: true,
+    autoplay: true,
+
+    animation_time: 30000,
+    slideshow_time: 0,
+    carousel: true,   
+   
+     
+    src : [
+    
+         
+         {
+             type: 'rss',
+             url: 'https://home.greens.org.nz/everything/feed',
+             author: '<span id="nb_author_2">Greens</span>',
+             link_target: '_blank'
+         }
+        
+     ]
+   });
+});
+
+</script>  -->
+
+
+
+
 <% content_for :side_body do %>
-  
+
   
 
        <div class="span4">
-				<aside id="sidebar" class="well">
+        <aside id="sidebar" class="well">
 
-				<% #the line below gets any code written in the blog side body in the admin refinerycms login %>
-				<% #= yield(:side_body_prepend) %>
+        <% #the line below gets any code written in the blog side body in the admin refinerycms login %>
+        <% #= yield(:side_body_prepend) %>
+
+        <!--<p style="color:white; background-color:green; display:inline; font-family:Arial, Helvetica, sans-serif">Blog | Green Party of Aotearoa New Zealand</p> 
+
+         <div id="swift_box2"></div> -->
 
   <%= render "/refinery/blog/shared/rss_feed" %>
   <%= render "/refinery/blog/shared/categories" %>
@@ -17,24 +63,28 @@
 
 
 
- 
+   
 
-					
-				</aside>
-				<!--<form class="well" />
-					<fieldset>
-						<legend>Newsletter</legend>
-						<small class="help-block">Sign up for our newsletter and get exclusive deals you won't find anywhere else straight to your inbox!</small>
-						<div class="control-group">
-							<div class="controls">
-								<input id="appendedInputButton" type="email" class="input-full" placeholder="Email" />
-							</div>
-						</div>
-						<button class="btn btn-primary btn-large" type="button">Subscribe</button>
-					</fieldset>
-				</form> -->
-			</div>
-		</div>
+
+          
+
+
+          
+        </aside>
+        <!--<form class="well" />
+          <fieldset>
+            <legend>Newsletter</legend>
+            <small class="help-block">Sign up for our newsletter and get exclusive deals you won't find anywhere else straight to your inbox!</small>
+            <div class="control-group">
+              <div class="controls">
+                <input id="appendedInputButton" type="email" class="input-full" placeholder="Email" />
+              </div>
+            </div>
+            <button class="btn btn-primary btn-large" type="button">Subscribe</button>
+          </fieldset>
+        </form> -->
+      </div>
+    </div>
 
 
   

@@ -1,0 +1,109 @@
+
+
+<!-- PAGE BASE CSS -->
+
+
+
+<style type="text/css">
+#nb_author_1 {
+  background-color: #2948ab; 
+  color: #fff; 
+  border-radius: 3px; 
+  font-size: 80%; 
+  padding: 2px 5px;
+  margin: 0 3px 0 -3px;
+  font-family: Helvetica;
+}
+#nb_author_2 {
+  background-color: #0d774f; 
+  color: #fff; 
+  border-radius: 3px; 
+  font-size: 80%; 
+  padding: 2px 5px;
+  margin: 0 3px 0 -3px;
+  font-family: Helvetica;
+}
+#nb_author_3 {
+  background-color: #f35338; 
+  color: #fff; 
+  border-radius: 3px; 
+  font-size: 80%; 
+  padding: 2px 5px;
+  margin: 0 3px 0 -3px;
+  font-family: Helvetica;
+}
+</style>
+<!-- //////////////////////////////////////////////// -->
+
+  <%= javascript_include_tag 'swift-box.min' %>
+  <%= stylesheet_link_tag "swift-box-layout.min" %> <%= javascript_include_tag 'jquery.min.js' %>
+
+
+     
+        
+<script type="text/javascript">
+$(document).ready(function(e) { 
+       $('#swift_box').lc_swift_box({
+      theme: 'light',
+        height: 200,
+        max_news: 50,
+        news_per_time: 2,
+        date_format: 'dd mmmm yyyy - HH:MM',
+        layout: 'vertical',
+        min_news_h: 130,
+        
+        boxed_news: false,
+        img_behavior: 'link',
+        buttons_position: 'top',
+        read_more_txt: '[...]',
+        
+        
+        autoplay: true,
+        carousel: true,
+
+        social_share: true,
+        touchswipe: false,
+     
+    src : [
+         
+          {
+             type: 'rss',
+             url: 'http://news.google.co.nz/news?cf=all&hl=en&pz=1&ned=nz&output=rss',
+             author: '<span id="nb_author_3">Google Top Stories</span>',
+         
+             link_target: '_blank'
+         },
+         {
+             type: 'rss',
+             url: 'http://news.google.co.nz/news?cf=all&hl=en&pz=1&ned=nz&topic=n&output=rss',
+             author: '<span id="nb_author_2">New Zealand News</span>',
+          
+             link_target: '_blank'
+         },
+{
+             type: 'rss',
+             url: 'http://news.google.co.nz/news/section?cf=all&pz=1&ned=nz&topic=m&ar=1447362545',
+             author: '<span id="nb_author_1">Health</span>',
+         
+             link_target: '_blank'
+         },
+         {
+             type: 'rss',
+             url: 'http://news.google.co.nz/news/section?cf=all&pz=1&ned=nz&topic=snc&ar=1447362526',
+             author: '<span id="nb_author_2">Science</span>',
+          
+             link_target: '_blank'
+         }
+
+        
+     ]
+   });
+});
+
+</script>
+
+
+          
+<div id="swift_box"></div>
+
+ 

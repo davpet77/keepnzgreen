@@ -1,25 +1,18 @@
 <% provide(:blog, "active") %>
 
+
+
 <div class="container">
 
       <div class="row-fluid">
-			<div class="span10">
-				<article class="well well-raised">
-					<!--<h4><i>  Please <u> <a href="usr_signup.html"><font color="red">register</a> </u></font>if you wish to post comments</i></h4>--> 
-					
-
+      <div class="span10" >
+        <article class="well well-raised"  style="background: #709c69;">
+          <!--<h4><i>  Please <u> <a href="usr_signup.html"><font color="red">register</a> </u></font>if you wish to post comments</i></h4>--> 
           
-        <%= image_tag("treeplanting03.png", :alt => "tree") %>
+          <%= render '/refinery/blog/shared/rss_header' %>
 
-
-
-
-
-					</article></div></div>
-
-
-
-
+       
+</article></div></div>
 
       <% content_for :body do %>
 

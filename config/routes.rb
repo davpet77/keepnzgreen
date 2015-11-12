@@ -6,8 +6,8 @@ Rails.application.routes.draw do
 
   get '/profile', to: 'registration#profile'
   
-
-
+  get '/rss', to: 'home#rss'
+  
 #  get 'registration/usr_login'
   get '/usr_signup', to: 'registration#usr_signup'
   get '/usr_login', to: 'registration#usr_login'

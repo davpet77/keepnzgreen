@@ -1,0 +1,131 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">  
+<title>Swift News Demo</title>
+
+<!-- PAGE BASE CSS -->
+
+
+
+<style type="text/css">
+#nb_author_1 {
+	background-color: #2948ab; 
+	color: #fff; 
+	border-radius: 3px; 
+	font-size: 80%; 
+	padding: 2px 5px;
+	margin: 0 3px 0 -3px;
+	font-family: Helvetica;
+}
+#nb_author_2 {
+	background-color: #0d774f; 
+	color: #fff; 
+	border-radius: 3px; 
+	font-size: 80%; 
+	padding: 2px 5px;
+	margin: 0 3px 0 -3px;
+	font-family: Helvetica;
+}
+</style>
+<!-- //////////////////////////////////////////////// -->
+
+
+<!-- //////////////////////////////////////////////// -->
+<!-- REQUIRED ELEMENTS -->
+
+<script src="js_assets/jquery-1.10.2.min.js" type="text/javascript"></script>
+<script src="swift-box.min.js" type="text/javascript"></script>
+<link rel="stylesheet" href="swift-box-layout.min.css" />
+
+<!-- //////////////////////////////////////////////// -->
+<!-- //////////////////////////////////////////////// -->
+
+</head>
+
+<body>
+
+<div class="container">
+  <div class="header">
+  	<div style="height: 80px;"></div> 
+  </div>
+    
+  <div class="content">
+    
+    <div id="swift_box1">
+    	<div class="nb_news_wrap" style="display: none;" exp_img_w="1_2" exp_img_h="auto">
+        <!-- <div class="nb_news_wrap" style="display: none;" img_max_w="250" img_max_h="1000" exp_img_pos="side" exp_img_w="1_3" exp_img_h="225"> -->
+        
+        	
+        </div>
+    
+    </div>
+    
+    <br />
+    <div id="swift_box_img_mode"></div>
+    <br />
+    
+    <br/>
+    <div id="c_sliding_demo"></div>
+    <br/>
+    
+    <div>
+        <div id="swift_box2" style="display: inline-block; width: 49.5%; vertical-align: top;"></div>
+        <div id="swift_box3" style="display: inline-block; width: 49.5%; vertical-align: top;"></div>
+    </div>
+    
+  </div>
+  
+  <div class="footer"><p><br/><br/></p></div>
+</div>
+
+
+
+<!-- //////////////////////////////////////////////// -->
+<!-- NEWS BOX INITIALIZATION -->
+<script type="text/javascript">
+$(document).ready(function(e) {
+   
+   
+   
+    
+   $('#swift_box2').lc_swift_box({
+	  	theme: 'light',
+	  	height: 430,
+	   	max_news: 8,
+		news_per_time: 4,
+		date_format: 'dd mmmm yyyy - HH:MM',
+		layout: 'vertical',
+		min_news_h: 130,
+		vert_img_w: 200,
+		boxed_news: false,
+		img_behavior: 'link',
+		buttons_position: 'top',
+		read_more_txt: '[...]',
+		exp_main_img_pos: 'side',
+		
+		autoplay: true,
+		carousel: true,
+
+		social_share: false,
+		touchswipe: false,
+		hide_elements: 'title',
+		src : [
+			 {
+				 type: 'youtube',
+				 id: 'Envato',
+				 link_target: '_blank'
+			 }
+   		]
+   });
+   
+
+
+});
+</script>
+<!-- //////////////////////////////////////////////// -->
+<!-- //////////////////////////////////////////////// -->
+
+</body>
+</html>

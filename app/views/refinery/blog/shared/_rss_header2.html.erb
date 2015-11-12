@@ -1,0 +1,91 @@
+
+
+
+
+<!-- PAGE BASE CSS -->
+
+
+
+<style type="text/css">
+#nb_author_1 {
+  background-color: #2948ab; 
+  color: #fff; 
+  border-radius: 3px; 
+  font-size: 80%; 
+  padding: 2px 5px;
+  margin: 0 3px 0 -3px;
+  font-family: Helvetica;
+}
+#nb_author_2 {
+  background-color: #0d774f; 
+  color: #fff; 
+  border-radius: 3px; 
+  font-size: 80%; 
+  padding: 2px 5px;
+  margin: 0 3px 0 -3px;
+  font-family: Helvetica;
+}
+#nb_author_3 {
+  background-color: #f35338; 
+  color: #fff; 
+  border-radius: 3px; 
+  font-size: 80%; 
+  padding: 2px 5px;
+  margin: 0 3px 0 -3px;
+  font-family: Helvetica;
+}
+</style>
+<!-- //////////////////////////////////////////////// -->
+
+  <%= javascript_include_tag 'swift-box.min' %>
+        <%= stylesheet_link_tag "swift-box-layout.min" %> <%= javascript_include_tag 'jquery.min.js' %>
+
+
+     
+        
+<script type="text/javascript">
+$(document).ready(function(e) { 
+       $('#swift_box').lc_swift_box({
+      theme: 'light',
+    height: 300,
+    news_per_time: 2,
+    max_news: 100,
+    social_share: true,
+    expandable_news: true,
+    elapsed_time: false,
+    
+    pause_on_hover: true,
+    autop_after_exp: true,
+    autoplay: true,
+    hide_elements: 'title',
+    animation_time: 25000,
+    slideshow_time: 0,
+    carousel: true,   
+     
+   src : [
+      {
+        type: 'rss',
+             url: 'http://feeds.feedburner.com/HIGHTIMESMagazine?format=xml',
+             remove_tags: 'em',
+          strip_tags: 'br',
+          link_target: '_blank'
+    
+      },
+      {
+        type: 'rss',
+             url: 'http://www.vimm.ca/feed/',
+             remove_tags: 'em',
+          strip_tags: 'br',
+          link_target: '_blank'
+      }
+      ]
+   });
+});
+
+</script>
+
+
+          
+<div id="swift_box"></div>
+
+ 
