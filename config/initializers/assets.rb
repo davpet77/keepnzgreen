@@ -22,6 +22,10 @@ Rails.application.config.assets.precompile += %w( bootstrap2.css )
 
 Rails.application.config.assets.precompile += %w( jquery.min.js )
 
+Rails.application.config.assets.precompile += %w( lightbox.css )
+
+Rails.application.config.assets.precompile += %w( lightbox.js )
+
 
 
 # Add additional assets to the asset load path

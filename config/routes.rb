@@ -7,6 +7,20 @@ Rails.application.routes.draw do
   get '/profile', to: 'registration#profile'
   
   get '/rss', to: 'home#rss'
+  get '/mm2', to: 'home#mm2'
+  get '/mm3', to: 'home#mm3'
+  get '/mm4', to: 'home#mm4'
+  get '/mm5', to: 'home#mm5'
+  get '/mm6', to: 'home#mm6'
+  get '/mm7', to: 'home#mm7'
+  get '/mm8', to: 'home#mm8'
+  get '/mm9', to: 'home#mm9'
+  get '/mm10', to: 'home#mm10'
+  get '/mm12', to: 'home#mm12'
+  get '/gallery1', to: 'home#gallery1'
+
+
+
   
 #  get 'registration/usr_login'
   get '/usr_signup', to: 'registration#usr_signup'

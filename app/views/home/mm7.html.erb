@@ -1,0 +1,191 @@
+<% provide(:rss, "active") %>
+
+<!DOCTYPE html>
+<style>
+
+.clear {
+    clear: both;
+}
+
+</style>
+
+<html lang="en">
+
+
+  
+
+    <%= stylesheet_link_tag "blog2" %>
+    <%= stylesheet_link_tag "bootstrap2" %>
+    <%= stylesheet_link_tag "lightbox" %>
+    <%= javascript_include_tag 'lightbox' %>
+  
+    
+   
+  </head>
+
+  <body>
+
+    
+
+    <div class="container">
+
+      <div class="blog-header">
+        <div style="float:left; margin:0 15px 5px 5px;" id="banner"><%= image_tag("mm-title10.jpg",   :alt => "") %></div>
+
+        <div>THIS IS A TEST</div>
+        <hr>
+
+        <h4>Index</h4>
+            <ol class="list-unstyled">
+                          
+            <li class="<%= yield(:rss) %>"><a href="rss.html">Medical Marijuana - Home Page</a></li>
+            <li class="<%= yield(:mm3) %>"><a href="mm3.html">Medical Marijuana Cultivation Techniques</a></li>
+            <li class="<%= yield(:mm4) %>"><a href="mm4.html">mm4</a></li>
+            <li class="<%= yield(:mm5) %>"><a href="mm5.html">mm5</a></li>
+            <li class="<%= yield(:mm6) %>"><a href="mm6.html">mm6</a></li>
+            <li class="<%= yield(:mm7) %>"><a href="mm7.html">mm7</a></li>
+            
+            
+            
+        </ol>
+
+        </div>
+
+        <div class="clear"></div>
+
+
+        
+        <div><p class="lead blog-description" style="color:green">Information on Medical Marijuana from NZ and around the world.</p></div>
+
+      <div class="row">
+
+        <div class="col-sm-6 blog-main">
+
+          <div class="blog-post">
+            <h3 class="blog-post-title">What is Medical Marijuana?</h3>
+            <p class="blog-post-meta">November 11, 2015 by <a href="#">Admin</a></p>
+
+            <hr>
+            <h3> Cannabis and Depression</h3>
+            <hr>
+            <p> There is one point that needs to be made clear right from the start.... cannabis and depression swings both ways. A lot of people are not going to like me saying that but too bad because the facts are the facts and if you want to live in a fantasy world then that's your perogative but this is an area where the facts speak for themselves.  </p>
+            <p>Cannabis can cause depression and even suicide... just ask the coroner how many people have cannabis in their bloodstream when they hang themselves or blow their own head off. I had mates who smoked cannabis and spun out and killed themselves... I had other mates who smoked so much cannabis they stopped going to work and stopped eating properly and looking after themselves properly and their whole world fell apart in the end and they killed themselves. You can argue all day that there was anunderlying condition and the cannabis wasn't the cause but the fact remains they smoked a ridiculous amout of cannabis and ended up dead. They didn't end up happy dancing through the fields with all the baby animals.</p>
+            <p> However I know of plenty of other cases where depressed people have successfully maintained normality by smoking cannabis... and these people outnumber those who fell off the deep end. I'm just being real about it okay because both sides of the argument tend to take very extreme views when it comes to the topic of cannabis and depression. You can't blame the cops and health sector either. You only need to cut down one person hanging from a rope with a note saying cannabis made them do it and you're never going to forget that and in the context of that paticular situation it's a perfectly reasonable attitude.</p>
+            <p> True story... when I was about nineteen at a party and I pulled out a joint of cannabis... this guy pulled out a knife and attacked me and tried to stab me but his mates held him back (yay for me!)... turns out the exact same thing had happened at a party one year earlier with this guy and his sister and somebody pulled out a joint and passed it to his sister... long story short she was still in Lake Alice psychiatric hospital after a massive depressive incident brought on by smoking one joint. </p>
+            <p> I've seen a lot of people spin out on cannabis and I mean really spin out too. I've seen people become suicidal... take their clothes off.... spew up... become very delusional (as in think people are after them) ....imagine illnesses they don't have... hallucinate (usually minor like thinking a black spot is a spider or something)... or very common... just freeze up and stop talking and stop moving and sometimes wet their pants. I've seen stuff like that my entire life and yet I hear NORML and GreenCross going on about how harmless it is and what fun it is to drive around on a busy road when you're stoned and just so much garbage like that. It always leaves me wondering what sort of weak cannabis do these people smoke? There's plenty of cannabis around these days that will knock you on your ass no matter who you think you are. It's out there... and I've grown it myself plenty of times. It's not as easy to grow as the pretty skunks but it's out there and it needs to be addressed as a potential issue.</p>
+            
+            <p> Let's be clear about this... everywhere that medical use of cannabis has been approved then the whole recreational side of things has loosened up anyway and become inextricably entwined with the Medical Marijuana industry. Already now overseas you have patients buying cannabis product according to taste and smell and looks... not effect. Just think about that for a second okay... do you shop for strawberry flavoured panadol or purple ibuprofen? Of course not. You have a pain and you just want it gone as fast as possible. People aren't shopping for cannabis that way though so already the whole recreational industry has simply changed gear and quietly slipped into the Medical Marijuana industry through the back door. </p>
+            <p> Just to clarify this point a bit more because it is a very important point... the colour, shape, smell and taste of marijuana has absolutely nothing whatsoever to do with how medically effective cannabis is. Those are all "fixable" traits that can be bred in or out of a gene pool. Yet these traits have become the criteria that confused medical patients are using worldwide now to select their "medicine." The whole medical use thing has been totally sabotaged by the recreational growers and I don't see that changing in the near future.</p>
+            
+            <hr>
+            </div>
+
+
+          <nav>
+            <ul class="pager">
+              <li><a href="#">Previous</a></li>
+              <li><a href="#">Next</a></li>
+            </ul>
+          </nav>
+
+        </div><!-- /.blog-main -->
+
+
+        <!-- SIDEBAR -->
+
+        <div class="col-sm-5 col-sm-offset-1 blog-sidebar">
+          <div class="sidebar-module sidebar-module-inset">
+           
+
+          <h4 style="color:brown"><em> Unless otherwise specified all photos were taken by me of my own plants in various locations around the country over the last fifteen years.</em></h4>
+
+          <hr>
+
+                
+           <!--<%= link_to image_tag("photo11-thumb.jpg", :size => "76x76"), "assets/photo11.jpg", :rel => "lightbox", :title => "test"%> -->
+           
+           <div style="float:left; margin:0 15px 5px 5px;">
+           <%= link_to image_tag("photo11-thumb.jpg"), "assets/photo11.jpg", :rel => "lightbox", :alt => "", :title => "click to enlarge"%></div>
+
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas odio, vitae scelerisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. Mauris ante ligula, facilisis sed ornare eu, lobortis in odio. Praesent convallis urna a lacus interdum ut hendrerit risus congue. Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac. In at libero sed nunc  </p>
+     
+          <hr>
+
+        
+            <div style="float:right; margin:0 15px 5px 5px;">
+           <%= link_to image_tag("photo13-thumb.jpg"), "assets/photo13.jpg", :rel => "lightbox", :alt => "", :title => "click to enlarge"%></div>
+           
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas odio, vitae scelerisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. Mauris ante ligula, facilisis sed ornare eu, lobortis in odio. Praesent convallis urna a lacus interdum ut hendrerit risus congue. Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac. In at libero sed nunc  </p>
+     
+          <hr>
+
+            <div style="float:left; margin:0 15px 5px 5px;">
+           <%= link_to image_tag("photo14-thumb.jpg"), "assets/photo14.jpg", :rel => "lightbox", :alt => "", :title => "click to enlarge"%></div>
+           
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas odio, vitae scelerisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. Mauris ante ligula, facilisis sed ornare eu, lobortis in odio. Praesent convallis urna a lacus interdum ut hendrerit risus congue. Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac. In at libero sed nunc  </p>
+     
+          <hr>
+
+           <div style="float:right; margin:0 15px 5px 5px;">
+           <%= link_to image_tag("photo15-thumb.jpg"), "assets/photo15.jpg", :rel => "lightbox", :alt => "", :title => "click to enlarge"%></div>
+           
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas odio, vitae scelerisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. Mauris ante ligula, facilisis sed ornare eu, lobortis in odio. Praesent convallis urna a lacus interdum ut hendrerit risus congue. Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac. In at libero sed nunc  </p>
+     
+          <hr>
+
+
+          <div style="float:left; margin:0 15px 5px 5px;">
+           <%= link_to image_tag("photo16-thumb.jpg"), "assets/photo16.jpg", :rel => "lightbox", :alt => "", :title => "click to enlarge"%></div>
+           
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas odio, vitae scelerisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. Mauris ante ligula, facilisis sed ornare eu, lobortis in odio. Praesent convallis urna a lacus interdum ut hendrerit risus congue. Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac. In at libero sed nunc  </p>
+     
+          <hr>
+
+
+           <h4 style="color:green">Latest Medical Marijuana News</h4>
+            <!--<%= render '/refinery/blog/shared/rss_side_body1' %> -->
+          </div>
+          <div class="sidebar-module">
+            <h4>Archives</h4>
+            <ol class="list-unstyled">
+              <li><a href="#">March 2014</a></li>
+              <li><a href="#">February 2014</a></li>
+              <li><a href="#">January 2014</a></li>
+              <li><a href="#">December 2013</a></li>
+              <li><a href="#">November 2013</a></li>
+              <li><a href="#">October 2013</a></li>
+              <li><a href="#">September 2013</a></li>
+              <li><a href="#">August 2013</a></li>
+              <li><a href="#">July 2013</a></li>
+              <li><a href="#">June 2013</a></li>
+              <li><a href="#">May 2013</a></li>
+              <li><a href="#">April 2013</a></li>
+            </ol>
+          </div>
+          <div class="sidebar-module">
+            <h4>Elsewhere</h4>
+            <ol class="list-unstyled">
+              <li><a href="#">GitHub</a></li>
+              <li><a href="#">Twitter</a></li>
+              <li><a href="#">Facebook</a></li>
+            </ol>
+          </div>
+          
+
+        </div><!-- /.blog-sidebar -->
+
+      </div><!-- /.row -->
+
+    </div><!-- /.container -->
+
+   
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="../../dist/js/bootstrap.min.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
+  </body>
+</html>

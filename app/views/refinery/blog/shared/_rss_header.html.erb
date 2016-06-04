@@ -45,15 +45,16 @@
 $(document).ready(function(e) { 
        $('#swift_box').lc_swift_box({
       theme: 'light',
-        height: 200,
+        height: 120,
         max_news: 50,
         news_per_time: 2,
         date_format: 'dd mmmm yyyy - HH:MM',
         layout: 'vertical',
-        min_news_h: 130,
+        min_news_h: 100,
+        vert_img_w: 100,
         
         boxed_news: false,
-        img_behavior: 'link',
+        img_behavior: 'none',
         buttons_position: 'top',
         read_more_txt: '[...]',
         
@@ -93,10 +94,17 @@ $(document).ready(function(e) {
              author: '<span id="nb_author_2">Science</span>',
           
              link_target: '_blank'
+         },
+         {
+             type: 'rss',
+             url: 'https://www.rt.com/rss/',
+             author: '<span id="nb_author_3">World News</span>',
+          
+             link_target: '_blank'
          }
 
-        
-     ]
+
+         ]
    });
 });
 
