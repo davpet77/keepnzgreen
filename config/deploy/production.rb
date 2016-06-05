@@ -17,9 +17,9 @@
 # property set. Specify the username and a domain or IP for the server.
 # Don't use `:all`, it's a meta role.
 
- role :app, %w{deploy@128.199.124.158:6728}
- role :web, %w{deploy@128.199.124.158:6728}
- role :db,  %w{deploy@128.199.124.158:6728}
+ role :app, %w{deploy@128.199.171.170:6728}
+ role :web, %w{deploy@128.199.171.170:6728}
+ role :db,  %w{deploy@128.199.171.170:6728}
 
 
 
@@ -49,7 +49,7 @@
 #
 # The server-based syntax can be used to override options:
 # ------------------------------------
- server '128.199.124.158',
+ server '128.199.171.170',
    user: 'deploy',
    roles: %w{web app db},
    ssh_options: {

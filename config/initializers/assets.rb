@@ -26,6 +26,10 @@ Rails.application.config.assets.precompile += %w( lightbox.css )
 
 Rails.application.config.assets.precompile += %w( lightbox.js )
 
+Rails.application.config.assets.precompile += %w( prettyPhoto.css )
+
+Rails.application.config.assets.precompile += %w( jquery.prettyPhoto.js )
+
 
 
 # Add additional assets to the asset load path

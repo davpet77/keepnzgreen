@@ -16,3 +16,4 @@
 //= require_tree .
 //= require bootstrap-sprockets
 //= require swift-box.min.js
+//= require jquery.prettyPhoto.js

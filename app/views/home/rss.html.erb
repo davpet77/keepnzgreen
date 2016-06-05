@@ -9,6 +9,15 @@
 
     <%= stylesheet_link_tag "blog2" %>
     <%= stylesheet_link_tag "bootstrap2" %>
+
+    
+    <%= stylesheet_link_tag "lightbox" %>
+
+    <%= javascript_include_tag 'jquery.min.js' %>
+        <%= javascript_include_tag 'jquery.min.js' %>
+    <%= javascript_include_tag 'lightbox.js' %>
+
+    
     
    
   </head>
@@ -194,8 +203,16 @@
                 
            <!--<%= link_to image_tag("photo11-thumb.jpg", :size => "76x76"), "assets/photo11.jpg", :rel => "lightbox", :title => "test"%> -->
            
+           
+
            <div style="float:left; margin:0 15px 5px 5px;">
            <%= link_to image_tag("photo11-thumb.jpg"), "assets/photo11.jpg", :rel => "lightbox", :alt => "", :title => "click to enlarge"%></div>
+
+            
+
+
+
+
 
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas odio, vitae scelerisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. Mauris ante ligula, facilisis sed ornare eu, lobortis in odio. Praesent convallis urna a lacus interdum ut hendrerit risus congue. Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac. In at libero sed nunc  </p>
      
@@ -258,6 +275,8 @@
       </div><!-- /.row -->
 
     </div><!-- /.container -->
+
+   
 
    
 
